@@ -20,7 +20,7 @@
 
   <body>
     <header class="header" data-header>
-      <div class="container">
+      <div class="container loginNav">
         <div class="overlay" data-overlay></div>
 
         <div class="header-search">
@@ -58,7 +58,7 @@
 
             <p class="header-action-label">Cart</p>
 
-            <div class="btn-badge green" aria-hidden="true">3</div>
+            <div class="btn-badge green" aria-hidden="true">0</div>
           </button>
 
           <button class="header-action-btn">
@@ -66,7 +66,7 @@
 
             <p class="header-action-label">Wishlisht</p>
 
-            <div class="btn-badge" aria-hidden="true">2</div>
+            <div class="btn-badge" aria-hidden="true">0</div>
           </button>
         </div>
 
@@ -102,7 +102,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Shop</a>
+              <a href="#shop" class="navbar-link">Shop</a>
             </li>
 
             <li>
@@ -114,7 +114,7 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Contact</a>
+              <a href="#contact" class="navbar-link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -305,7 +305,7 @@
         - #PRODUCT
       -->
 
-        <section class="section product">
+        <section class="section product" id="shop">
           <div class="container">
             <h2 class="h2 section-title">Products of the week</h2>
 
@@ -362,7 +362,7 @@
                         class="card-action-btn"
                         aria-label="Add to Whishlist"
                       >
-                        <ion-icon name="heart-outline"></ion-icon>
+                        <ion-icon name="heart-outline" id="hart"></ion-icon>
                       </button>
                     </div>
                   </figure>
@@ -841,7 +841,7 @@
         - #BLOG
       -->
 
-        <section class="section blog">
+        <section class="section blog" id="blog">
           <div class="container">
             <h2 class="h2 section-title">Latest fashion news</h2>
 
@@ -851,7 +851,7 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/blog-1.jpg"
+                        src="img/instagram-6.jpg"
                         alt="Worthy Cyber Monday Fashion From Casmart"
                         loading="lazy"
                         width="1020"
@@ -873,7 +873,7 @@
                         <ion-icon name="time-outline"></ion-icon>
 
                         <a href="#" class="card-meta-link">
-                          <time datetime="2021-03-31">31 Mar 2021</time>
+                          <time datetime="2021-03-31">31 Dec 2023</time>
                         </a>
                       </li>
                     </ul>
@@ -890,7 +890,7 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/blog-2.jpg"
+                        src="img/musthave-9.png"
                         alt="Holiday Home Decoration I’ve Recently Ordered"
                         loading="lazy"
                         width="1020"
@@ -912,7 +912,7 @@
                         <ion-icon name="time-outline"></ion-icon>
 
                         <a href="#" class="card-meta-link">
-                          <time datetime="2021-03-31">31 Mar 2021</time>
+                          <time datetime="2021-03-31">31 Dec 2023</time>
                         </a>
                       </li>
                     </ul>
@@ -931,7 +931,7 @@
                   <figure class="card-banner">
                     <a href="#">
                       <img
-                        src="./assets/images/blog-3.jpg"
+                        src="img/news-2.jpg"
                         alt="Unique Ideas for Fashion You Haven’t heard yet"
                         loading="lazy"
                         width="1020"
@@ -953,7 +953,7 @@
                         <ion-icon name="time-outline"></ion-icon>
 
                         <a href="#" class="card-meta-link">
-                          <time datetime="2021-03-31">31 Mar 2021</time>
+                          <time datetime="2021-03-31">31 dec 2023</time>
                         </a>
                       </li>
                     </ul>
@@ -974,7 +974,7 @@
         - #NEWSLETTER
       -->
 
-        <section class="section newsletter">
+        <section class="section newsletter" id="contact">
           <div class="container">
             <div
               class="newsletter-card"
@@ -1021,7 +1021,7 @@
         <div class="container">
           <div class="footer-brand">
             <a href="#" class="logo">
-              <img src="./assets/images/logo.svg" alt="Casmart logo" />
+              <img src="img/logo.svg" alt="Casmart logo" />
             </a>
 
             <p class="footer-text">
@@ -1149,6 +1149,71 @@
         </div>
       </div>
 
+      <div class="containerr">
+        <div class="card">
+          <div class="closeModel">
+            <button class="closeContent">X</button>
+          </div>
+          <h2>Login Form</h2>
+          <form>
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <button type="submit">Login</button>
+          </form>
+          <div class="switch">
+            Don't have an account?
+            <a href="#" class="userInfo">Register here</a>
+          </div>
+        </div>
+
+        <div class="card" style="display: none">
+          <div class="closeModel">
+            <button class="closeContent">X</button>
+          </div>
+          <h2>Register Form</h2>
+          <form>
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+
+            <label for="new-password">New Password</label>
+            <input
+              type="password"
+              id="new-password"
+              placeholder="Enter your new password"
+              required
+            />
+
+            <button type="submit">Register</button>
+          </form>
+          <div class="switch">
+            Already have an account?
+            <a href="#" class="cureentUser">Login here</a>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-bottom">
         <div class="container">
           <p class="copyright">
@@ -1173,14 +1238,13 @@
             <p class="payment-title">We Support</p>
 
             <img
-              src="./assets/images/payment-img.png"
+              src="img/payment-img.png"
               alt="Online payment logos"
               class="payment-img"
             />
           </div>
         </div>
       </div>
-     <h1>my name is abdulkari</h1>
     </footer>
 
     <!-- 
@@ -1196,6 +1260,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/ab60e20547.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="abdul.js"></script>
   </body>
 </html>
